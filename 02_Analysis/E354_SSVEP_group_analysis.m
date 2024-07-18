@@ -15,7 +15,7 @@ E354_paths_globalParams      % script with all paths, this file need to be chang
 
 load(fullfile(paths.Analysis,'E354_chanlocs.mat'))
 
-RECOMPUTE_SPECTRAL_AVERAGES = 1;
+RECOMPUTE_SPECTRAL_AVERAGES = 0;
 %%
 
  % spectral average for conditions without backgroud

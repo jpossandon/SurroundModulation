@@ -26,7 +26,7 @@ if strcmp(SITE,'HAMBURGv2')
 end
 
 %%
-for freq =1:length(freqsToPlot)
+for freq =1%:length(freqsToPlot)
     mkdir(fullfile(paths.Analysis,'SSVEPgroup',['figures_SSVEP_' num2str(freqsToPlot(freq))]))
     thisTbl = resTables.([sprintf('table_%d',freqsToPlot(freq))]);
     for mes = 1%:length(measures)

@@ -25,7 +25,7 @@ E354_paths_globalParams      % script with all paths, this file need to be chang
 DO_INDIVIDUAL_PLOTS = 0;
 %%
 % Getting individual preprocessd data, epoching, perodogram and individual plots
-for subj = 1:length(subjIDs)
+for subj = 10:length(subjIDs)
     if strcmp(SITE,'HYDERABAD') % participant filename
         filename        = ['EEG_EXP_SS_' subjIDs{subj}(2:end)]; 
     elseif strcmp(SITE,'HAMBURG')

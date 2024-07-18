@@ -156,7 +156,12 @@ PARAMS.TRIAL.PsychCurve.pThreshold  = 0.82;
 PARAMS.TRIAL.PsychCurve.beta        = 3;
 PARAMS.TRIAL.PsychCurve.delta       = 0.02;
 PARAMS.TRIAL.PsychCurve.gamma       = 0.5;
-PARAMS.TRIAL.PsychCurve.q95Limit    = .01;
+
+% The q95Limit is the width of the posterior distribution used for stopping
+% the testing for a condition. When the width of the posterior is below the
+% limit for at least 3 trials, remaining trials for the condition are
+% elimined
+PARAMS.TRIAL.PsychCurve.q95Limit    = .05;  
 % PARAMS.TRIAL.PsychCurve.range       = 5;
 
 % BACKGROUND PARAMETERS
